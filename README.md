@@ -16,9 +16,11 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 @import url("https://yes-0001.github.io/pre2025cord/src/main.css");
 @import url("https://yes-0001.github.io/pre2025cord/src/addons/hide_nameplates.css");
 
+/*  MAKE SURE TO CHECK GITHUB FOR ROOT UPDATES  */
+
 :root {
 	/*  transparency values [0.0-1.0] (type none to have no coloring added on), allows for use with a background image  */
-	--transparency_call:              50%;  /*  discord call background  */
+	--transparency_call:              100%;  /*  discord call background  */
 	--transparency_chat:              100%;
 	--transparency_bg:                80%;
 	--transparency_title:             40%;  /*  title (the thing above chat in servers, and the thing above the call bg in calls)  */
@@ -31,7 +33,7 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 	--color_call:                     0, 0, 0;
 	--color_chat:                     18, 18, 18;
 	--color_bg:                       5, 5, 5;
-	--color_title:                    0, 0, 0;
+	--color_title:                    0;
 	--color_guildsList:               5, 5, 5;
 	--color_sidebarList:              30, 30, 30;
 	--color_panels:                   30, 30, 30;
@@ -40,6 +42,15 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 	/*  gradient values, looks best on transparent backgrounds  */
 	--gradient_guildsList_point1:     94.2%;
 	--gradient_guildsList_point2:     96%;
+
+	/*  borders  */
+	--call_border-bottom: 1px;
+	--call_border-top: 1px;
+	--sidebarList_border-right: 1px;
+	--sidebarList_border-left: 1px;
+	--sidebarList_border-top: 1px;
+	--panels_border-left: 1px;
+	--panels_border-top: 1px;
 
 	/*  others  */
 	--border_colors:               rgba(75, 75, 75, 0.5);

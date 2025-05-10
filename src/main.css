@@ -649,8 +649,8 @@ html.platform-osx .title_c38106 {
 		/* background-color: color-mix(color-mix(in hsl, var(--background-secondary), rgba(0, 0, 0, 1)), transparent) !important; */
 		/* background-color: var(--background-secondary); */
 		/* background: none; */
-		border-bottom: 1px solid var(--border_colors);
-		/* border-top: 1px solid var(--border_colors); */
+		border-bottom: var(--call_border-bottom) solid var(--border_colors);
+		border-top: var(--call_border-top) solid var(--border_colors);
 		box-shadow: var(--shadow-border), var(--shadow-ledge), var(--shadow-low);
 	}
 	/* call background */
@@ -737,7 +737,7 @@ html.platform-osx .title_c38106 {
 		grid-template-rows: [start] 1fr [panelsStart] min-content [end];
 		width: 310px !important;
 		border-radius: 0;
-		border-right: 1px solid var(--border_colors);
+		border-right: var(--sidebarList_border-right) solid var(--border_colors);
 		margin: 0 !important;
 	}
 	.tree_ef3116 {
@@ -794,8 +794,8 @@ html.platform-osx .title_c38106 {
 		/* background-color: var(--background-secondary); */
 		/* background: none; */
 		/* border-right: 1px solid var(--border_colors); */
-		border-left: 1px solid var(--border_colors);
-		border-top: 1px solid var(--border_colors);
+		border-left: var(--sidebarList_border-left) solid var(--border_colors);
+		border-top: var(--sidebarList_border-top) solid var(--border_colors);
 		--custom-app-panels-height: 0;
 	}
 	.scroller__99e7c {
@@ -832,8 +832,8 @@ html.platform-osx .title_c38106 {
 		/* background-color: var(--background-secondary); */
 		/* background: none; */
 		/* border-right: 5px solid var(--border_colors); */
-		border-left: 1px solid var(--border_colors);
-		border-top: 1px solid var(--border_colors);
+		border-left: var(--panels_border-left) solid var(--border_colors);
+		border-top: var(--panels_border-top) solid var(--border_colors);
 		.avatar__37e49.wrapper__44b0c {
 			width: 32px !important;
 			height: 32px !important;
