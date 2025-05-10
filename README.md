@@ -26,7 +26,7 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 
 
 :root {
-	/*  transparency values [0.0-1.0] (type none to have no coloring added on), allows for use with a background image  */
+	/*  transparency values [0-100%] (type none to have no coloring added on), allows for use with a background image  */
 	--transparency_call:              100%;  /*  discord call background  */
 	--transparency_chat:              100%;
 	--transparency_bg:                80%;
