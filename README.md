@@ -46,7 +46,7 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 	--color_panels:                   30, 30, 30;
 	--color_panels_streaming:         30, 30, 30;
 	
-	/*  gradient values, looks best on transparent backgrounds  */
+	/*  gradient values for the sidebar background, looks best on transparent backgrounds  */
 	--gradient_guildsList_point1:     94.2%;
 	--gradient_guildsList_point2:     96%;
 
