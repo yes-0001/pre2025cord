@@ -4,7 +4,7 @@ A theme for Discord that brings the pre-2025 refresh UI back without removing fe
 
 ###### folders currently are not styled right so it might be weird for you
 
-![Preview](https://raw.githubusercontent.com/yes-0001/pre2025cord/master/Screenshot_1379.png)
+![Preview](https://raw.githubusercontent.com/yes-0001/pre2025cord/master/Screenshot_1379.webp)
 
 # Installation
 
