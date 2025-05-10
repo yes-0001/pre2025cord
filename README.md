@@ -16,7 +16,14 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 @import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/main.css");
 @import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/addons/hide_nameplates.css");
 
-/*  MAKE SURE TO CHECK GITHUB FOR ROOT UPDATES  */
+
+/*  
+    MAKE SURE TO CHECK GITHUB FOR :ROOT UPDATES
+    hide_nameplates credit: pointy in Vencord discord (https://discord.com/channels/1015060230222131221/1028106818368589824/1356780198405734471)
+
+    if you use a theme, make sure to change the values to fit your needs, as these values work best with default theme
+*/
+
 
 :root {
 	/*  transparency values [0.0-1.0] (type none to have no coloring added on), allows for use with a background image  */
