@@ -13,8 +13,8 @@ A theme for Discord that brings the pre-2025 refresh UI back without removing fe
 Paste the following in `Settings > Themes > Edit QuickCSS`:
 
 ```css
-@import url("https://yes-0001.github.io/pre2025cord/src/main.css");
-@import url("https://yes-0001.github.io/pre2025cord/src/addons/hide_nameplates.css");
+@import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/main.css");
+@import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/addons/hide_nameplates.css");
 
 /*  MAKE SURE TO CHECK GITHUB FOR ROOT UPDATES  */
 
