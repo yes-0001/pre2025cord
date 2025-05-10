@@ -1,4 +1,4 @@
-# pre2025cord
+# pre2025cord (WIP)
 
 A theme for Discord that brings the pre-2025 refresh UI back without removing features
 
