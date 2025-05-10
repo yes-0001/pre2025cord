@@ -40,7 +40,7 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 	--color_call:                     0, 0, 0;
 	--color_chat:                     18, 18, 18;
 	--color_bg:                       5, 5, 5;
-	--color_title:                    0;
+	--color_title:                    0, 0, 0;
 	--color_guildsList:               5, 5, 5;
 	--color_sidebarList:              30, 30, 30;
 	--color_panels:                   30, 30, 30;
