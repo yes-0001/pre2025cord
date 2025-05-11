@@ -69,3 +69,5 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 
 
 ```
+
+## [Join the Discord to give suggestions and complaints](https://discord.com/invite/klecakes)
