@@ -32,7 +32,7 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 	/*  opacity for version text on topbar, keep this slightly visible so you know when you need to check for :root changes  */
 	--version-opactiy: 2%;
 
-	/*  transparency values [0-100%], allows for use with a background image  */
+	/*  transparency values [0-100%], allows for use with a background image (0% means invisible)  */
 	--transparency_call:                    80%;  /*  discord call background  */
 	--transparency_title:                   0%;  /*  title (the thing above chat in servers, and the thing above the call bg in dms)  */
 	--transparency_chat:                    12%;
