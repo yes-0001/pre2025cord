@@ -16,18 +16,18 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 @import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/main.css");
 @import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/addons/hide_nameplates.css");
 
-
 /*  
+
     MAKE SURE TO CHECK GITHUB FOR :ROOT UPDATES
     hide_nameplates credit: pointy in Vencord discord (https://discord.com/channels/1015060230222131221/1028106818368589824/1356780198405734471)
 
     if you use a theme, make sure to change the values to fit your needs, as these values work best with default theme
-*/
 
+*/
 
 :root {
 	/*  transparency values [0-100%] (type none to have no coloring added on), allows for use with a background image  */
-	--transparency_call:              100%;  /*  discord call background  */
+	--transparency_call:              50%;  /*  discord call background  */
 	--transparency_chat:              100%;
 	--transparency_bg:                80%;
 	--transparency_title:             40%;  /*  title (the thing above chat in servers, and the thing above the call bg in calls)  */
@@ -35,6 +35,8 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 	--transparency_sidebarList:       100%;  /*  channel/dm list  */
 	--transparency_panels:            0%;  /*  bottom left voice/user info  */
 	--transparency_panels_streaming:  0%;  /*  bottom left streaming info  */
+	--transparency_settings-sidebar:  100%;  /*  left sidebar of settings  */
+	--transparency_settings-content:  100%;  /*  right side content of settings  */
 
 	/*  additive color values (the extra color added on top of the base theme color)  */
 	--color_call:                     0, 0, 0;
@@ -45,8 +47,10 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 	--color_sidebarList:              30, 30, 30;
 	--color_panels:                   30, 30, 30;
 	--color_panels_streaming:         30, 30, 30;
+	--color_settings-sidebar:         18, 18, 18;
+	--color_settings-content:         30, 30, 30;
 	
-	/*  gradient values for the sidebar background, looks best on transparent backgrounds  */
+	/*  gradient values for guildslist, looks best on transparent backgrounds  */
 	--gradient_guildsList_point1:     94.2%;
 	--gradient_guildsList_point2:     96%;
 

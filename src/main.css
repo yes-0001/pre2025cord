@@ -766,6 +766,25 @@ html.platform-osx .title_c38106 {
 		/* background-color: var(--background-secondary); */
 		/* background-color: color-mix(in hsl, var(--background-secondary), transparent var(--transparency_bg)); */
 	}
+	.bar_c38106 {
+		top: 0;
+		right: 0;
+		z-index: 104;
+		background-color: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(var(--color_bg), var(--transparency_bg))), rgba(0,0,0,var(--transparency_bg)));
+	}
+	.standardSidebarView__23e6b {
+		background: none;
+		background-color: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(var(--color_settings-sidebar), var(--transparency_settings-sidebar))), rgba(0,0,0,var(--transparency_settings-sidebar)));
+	}
+	.sidebarRegionScroller__23e6b {
+		background: none;
+	}
+	.contentRegion__23e6b {
+		background: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(var(--color_settings-content), var(--transparency_settings-content))), rgba(0,0,0,var(--transparency_settings-content)));
+	}
+	.contentRegionScroller__23e6b {
+		background: none;
+	}
 	.title_f75fb0 {
 		padding-left: 8px;
 	}
@@ -1340,11 +1359,17 @@ html.platform-osx .title_c38106 {
 		margin-top: -5px;
 		margin-right: -16px;
 	}
-	.blobContainer_e5445c .lowerBadge_cc5dd2 {
+	.listItem__650eb .lowerBadge_cc5dd2 {
 		border: 5px solid var(--background-tertiary);
 		border-radius: 50%;
 		margin-bottom: -13px;
 		margin-right: -16px;
+	}
+	.listItem__650eb:has([class="folderHeader__48112"]) .lowerBadge_cc5dd2 {
+		border: 5px solid var(--background-tertiary);
+		border-radius: 50%;
+		margin-bottom: -6px;
+		margin-right: -4px;
 	}
 
 	/* voice channel user count */
@@ -1693,11 +1718,6 @@ html.platform-osx .title_c38106 {
 
 .bar_c38106 .trailing_c38106 .recentsIcon_c99c29:nth-last-child(3) + a {
 	display: none;
-}
-html .bar_c38106 {
-	top: 0;
-	right: 0;
-	z-index: 104;
 }
 .inviteToolbar__133bf > .clickable__9293f.iconWrapper__9293f {
 	right: 70px;
