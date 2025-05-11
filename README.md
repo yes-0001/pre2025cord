@@ -27,7 +27,7 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 */
 
 :root {
-	--current-version: "v1.0";
+	--current-version: "v1.1";
 	
 	/*  opacity for version text on topbar, keep this slightly visible so you know when you need to check for :root changes  */
 	--version-opactiy: 2%;
@@ -47,6 +47,8 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 	--transparency_panels_streaming:        0%;  /*  bottom left streaming info when streaming  */
 	--transparency_settings-sidebar:        30%;  /*  left sidebar of settings  */
 	--transparency_settings-content:        20%;  /*  right side content of settings  */
+	--transparency_modal-main:              30%;  /*  modal background (screenshare modal and others)  */
+	--transparency_modal-footer:            20%;  /*  modal footer (screenshare modal and others)  */
 	
 	/*  gradient values for guildslist, looks best on transparent backgrounds  */
 	--gradient_guildsList_point1:           94.2%;
@@ -67,6 +69,4 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 	--pill_padding:                         0px; /*  the white stuff to the left of guilds showing you: where you currently are, and what servers have unread messages  */
 	--server_padding:                       -4px; /*  padding for guild icons, change if they're too far left or right  */
 }
-
-
 ```

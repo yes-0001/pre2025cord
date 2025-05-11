@@ -1,5 +1,5 @@
 :root {
-    --github-version: "v1.0"
+	--github-version: "v1.1";
 }
 
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
@@ -412,6 +412,27 @@ html.platform-osx .title_c38106 {
 		padding-top: unset;
 	}
 	.root__49fc1 {
+		/* background: none; */
+ 		background-image: linear-gradient(
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_modal-main))
+						), rgba(0,0,0, var(--transparency_modal-main))
+					), rgba(0,0,0, var(--transparency_modal-main))
+				), rgba(0,0,0, var(--transparency_modal-main))
+			), 
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_modal-main))
+						), rgba(0,0,0, var(--transparency_modal-main))
+					), rgba(0,0,0, var(--transparency_modal-main))
+				), rgba(0,0,0, var(--transparency_modal-main))
+			)
+		);
 		border: none;
 	}
 	.button_f7ecac.hoverBarButton_f84418:nth-of-type(1),
@@ -724,7 +745,28 @@ html.platform-osx .title_c38106 {
 	/* modal footers */
 	.footer__49fc1 {
 		border-radius: 0 0 5px 5px;
-		background-color: var(--modal-footer-background);
+		/* background-color: var(--modal-footer-background); */
+		background: none;
+ 		background-image: linear-gradient(
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_modal-footer))
+						), rgba(0,0,0, var(--transparency_modal-footer))
+					), rgba(0,0,0, var(--transparency_modal-footer))
+				), rgba(0,0,0, var(--transparency_modal-footer))
+			), 
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_modal-footer))
+						), rgba(0,0,0, var(--transparency_modal-footer))
+					), rgba(0,0,0, var(--transparency_modal-footer))
+				), rgba(0,0,0, var(--transparency_modal-footer))
+			)
+		);
 	}
 	.footerSeparator__49fc1 {
 		box-shadow: inset 0 1px 0 hsl(220 calc(1 * 6.522%) 18.039% /0.6);
@@ -740,7 +782,15 @@ html.platform-osx .title_c38106 {
 			transition: border-color 0.2s ease-in-out;
 		}
 	}
+	.threeColorGradient_e5de78, .twoColorGradient_e5de78 {
+		color: color-mix(in lab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
+		background: none;
+		-webkit-text-fill-color: initial;
 
+		&::after, &.nameGlow__703b9 {
+			display: none;
+		}
+	}
 	.addFriend__133bf:hover {
 		background: var(--green) !important;
 	}
@@ -1086,6 +1136,7 @@ html.platform-osx .title_c38106 {
 		padding-left: 8px;
 	}
 	.container__9293f {
+		z-index: 3000;
   		/* background-color: color-mix(in srgb, color-mix(in hsl, var(--background-secondary), rgba(5, 5, 5, 1)) var(1, --transparency_title), transparent); */
 		/* background-color: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(var(--color_title), var(--transparency_title))), rgba(0,0,0,var(--transparency_title))); */
 		/* background: color-mix(color-mix(in hsl, var(--background-secondary), rgba(5, 5, 5, 1)), var(--transparency_title)) !important; */
@@ -1760,16 +1811,37 @@ html.platform-osx .title_c38106 {
 		margin-right: -16px;
 	}
 	.listItem__650eb .lowerBadge_cc5dd2 {
-		border: 5px solid var(--background-tertiary);
+		border: 5px solid;
+		border-color: color-mix(
+			in hsl, color-mix(
+				in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_guildsList))
+			), rgba(0,0,0, var(--transparency_guildsList))
+		);
 		border-radius: 50%;
 		margin-bottom: -13px;
 		margin-right: -16px;
 	}
 	.listItem__650eb:has([class="folderHeader__48112"]) .lowerBadge_cc5dd2 {
-		border: 5px solid var(--background-tertiary);
+		border: 5px solid;
+		border-color: color-mix(
+			in hsl, color-mix(
+				in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_guildsList))
+			), rgba(0,0,0, var(--transparency_guildsList))
+		);
 		border-radius: 50%;
 		margin-bottom: -6px;
 		margin-right: -4px;
+	}
+	.listItem__650eb:has([aria-owns="guild-list-unread-dms"]) .lowerBadge_cc5dd2 {
+		border: 5px solid;
+		border-color: color-mix(
+			in hsl, color-mix(
+				in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_topbar))
+			), rgba(0,0,0, var(--transparency_topbar))
+		);
+		border-radius: 50%;
+		margin-bottom: -13px;
+		margin-right: -16px;
 	}
 
 	/* voice channel user count */
@@ -2071,9 +2143,10 @@ html.platform-osx .title_c38106 {
 	}
 }
 .bar_c38106 .trailing_c38106 {
-	top: 51px;
+	top: 50px;
 	gap: 8px;
-	z-index: 102;
+	position: relative;
+	z-index: 1;
 }
 .bar_c38106 .channelTabs-trailing .trailing_c38106 {
 	top: 44px;
@@ -2093,9 +2166,6 @@ html.platform-osx .title_c38106 {
 #channelTabs-settingsMenu {
 	position: relative;
 	right: 20px;
-}
-.container__01ae2 > .container__9293f {
-	z-index: 102;
 }
 .bar_c38106 .trailing_c38106 .iconWrapper__9293f {
 	width: 30px;
@@ -2280,10 +2350,6 @@ html.platform-osx .title_c38106 {
         width: 100% !important;
         height: 100% !important;
 	}
-}
-
-.attachedCaretButtonContainer_f1ceac:has(button[aria-label="Turn On Camera"]) {
-	display: none;
 }
 
 .spriteContainer__04eed {
