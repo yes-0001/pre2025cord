@@ -1,6 +1,6 @@
 # pre2025cord (WIP)
 
-A theme for Discord that brings the pre-2025 refresh UI back without removing features
+A theme for Discord that brings the pre-2025 UI back without removing features
 
 ###### this does not work with BetterFolders plugin at the moment, there's also a bug where if you scroll down a bit too far in dms/channels it spazzes out
 
