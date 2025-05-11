@@ -3,6 +3,8 @@
 A theme for Discord that brings the pre-2025 refresh UI back without removing features
 
 ###### this does not work with BetterFolders plugin at the moment
+###### current bugs:
+######   -  dms freaking out when scrolling down
 
 ![Preview](Screenshot_1384.webp)
 
