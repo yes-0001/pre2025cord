@@ -2,7 +2,7 @@
 
 A theme for Discord that brings the pre-2025 refresh UI back without removing features
 
-###### folders currently are not styled right so it might be weird for you
+###### this does not work with BetterFolders dedicated sidebar plugin at the moment
 
 ![Preview](Screenshot_1379.webp)
 
