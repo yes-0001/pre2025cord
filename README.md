@@ -44,7 +44,7 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 	--transparency_searchbar-left:          40%;  /*  search bar on the top left above your dms  */
 	--transparency_searchbar-right:         40%;  /*  search bar on the top right  */
 	--transparency_panels:                  40%;  /*  bottom left voice/user info  */
-	--transparency_panels_streaming:        0%;  /*  bottom left streaming info  */
+	--transparency_panels_streaming:        0%;  /*  bottom left streaming info when streaming  */
 	--transparency_settings-sidebar:        30%;  /*  left sidebar of settings  */
 	--transparency_settings-content:        20%;  /*  right side content of settings  */
 	
