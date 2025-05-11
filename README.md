@@ -14,14 +14,11 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 
 ```css
 @import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/main.css");
-@import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/addons/hide_nameplates.css");
 /* @import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/addons/hide_camerabutton.css"); */
 
 /*  
 
     MAKE SURE TO CHECK GITHUB FOR :ROOT UPDATES
-    hide_nameplates credit: pointy in Vencord discord (https://discord.com/channels/1015060230222131221/1028106818368589824/1356780198405734471)
-
     if you use a theme, make sure to change the values to fit your needs, as these values work best with default theme
 
 */
@@ -69,4 +66,6 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 	--pill_padding:                         0px; /*  the white stuff to the left of guilds showing you: where you currently are, and what servers have unread messages  */
 	--server_padding:                       -4px; /*  padding for guild icons, change if they're too far left or right  */
 }
+
+
 ```

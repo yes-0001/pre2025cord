@@ -334,6 +334,12 @@ html.platform-osx .title_c38106 {
 		-webkit-backdrop-filter: unset;
 	    backdrop-filter: unset;
 	}
+	.nameplated__91a9d:not(:hover)>[style] {
+		display: none;
+	}
+	.nameplated__91a9d:hover>[style] {
+		animation: fadeIn__4bbc6 .12s ease-in forwards;
+	}
 	[class^="headerText"] {display: inline-flex;}
 	[class^="headerText"] > span:is([class^="username"]) {order: 1;}
 	[class^="headerText"] > span:has([class^="roleIcon"]) {order: 2;}
