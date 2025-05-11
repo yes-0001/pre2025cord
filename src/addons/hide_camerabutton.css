@@ -1,0 +1,3 @@
+.attachedCaretButtonContainer_f1ceac:has(button[aria-label="Turn On Camera"]) {
+	display: none;
+}

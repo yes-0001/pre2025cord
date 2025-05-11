@@ -4,7 +4,7 @@ A theme for Discord that brings the pre-2025 refresh UI back without removing fe
 
 ###### this does not work with BetterFolders plugin at the moment
 
-![Preview](Screenshot_1379.webp)
+![Preview](Screenshot_1384.webp)
 
 # Installation
 
@@ -15,6 +15,7 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 ```css
 @import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/main.css");
 @import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/addons/hide_nameplates.css");
+/* @import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/addons/hide_camerabutton.css"); */
 
 /*  
 
@@ -26,46 +27,47 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 */
 
 :root {
-	/*  transparency values [0-100%] (type none to have no coloring added on), allows for use with a background image  */
-	--transparency_call:              50%;  /*  discord call background  */
-	--transparency_chat:              100%;
-	--transparency_bg:                80%;
-	--transparency_title:             40%;  /*  title (the thing above chat in servers, and the thing above the call bg in calls)  */
-	--transparency_guildsList:        0%;  /*  server list  */
-	--transparency_sidebarList:       100%;  /*  channel/dm list  */
-	--transparency_panels:            0%;  /*  bottom left voice/user info  */
-	--transparency_panels_streaming:  0%;  /*  bottom left streaming info  */
-	--transparency_settings-sidebar:  100%;  /*  left sidebar of settings  */
-	--transparency_settings-content:  100%;  /*  right side content of settings  */
+	--current-version: "v1.0";
+	
+	/*  opacity for version text on topbar, keep this slightly visible so you know when you need to check for :root changes  */
+	--version-opactiy: 2%;
 
-	/*  additive color values (the extra color added on top of the base theme color)  */
-	--color_call:                     0, 0, 0;
-	--color_chat:                     18, 18, 18;
-	--color_bg:                       5, 5, 5;
-	--color_title:                    0, 0, 0;
-	--color_guildsList:               5, 5, 5;
-	--color_sidebarList:              30, 30, 30;
-	--color_panels:                   30, 30, 30;
-	--color_panels_streaming:         30, 30, 30;
-	--color_settings-sidebar:         18, 18, 18;
-	--color_settings-content:         30, 30, 30;
+	/*  transparency values [0-100%], allows for use with a background image  */
+	--transparency_call:                    80%;  /*  discord call background  */
+	--transparency_title:                   0%;  /*  title (the thing above chat in servers, and the thing above the call bg in dms)  */
+	--transparency_chat:                    12%;
+	--transparency_channeltext:             0%;
+	--transparency_bg:                      0%;
+	--transparency_topbar:                  60%;
+	--transparency_guildsList:              60%;  /*  server list  */
+	--transparency_sidebarList:             30%;  /*  channel/dm list  */
+	--transparency_searchbar-left:          40%;  /*  search bar on the top left above your dms  */
+	--transparency_searchbar-right:         40%;  /*  search bar on the top right  */
+	--transparency_panels:                  40%;  /*  bottom left voice/user info  */
+	--transparency_panels_streaming:        0%;  /*  bottom left streaming info  */
+	--transparency_settings-sidebar:        30%;  /*  left sidebar of settings  */
+	--transparency_settings-content:        20%;  /*  right side content of settings  */
 	
 	/*  gradient values for guildslist, looks best on transparent backgrounds  */
-	--gradient_guildsList_point1:     94.2%;
-	--gradient_guildsList_point2:     96%;
+	--gradient_guildsList_point1:           94.2%;
+	--gradient_guildsList_point2:           96%;
 
-	/*  borders  */
-	--call_border-bottom: 1px;
-	--call_border-top: 1px;
-	--sidebarList_border-right: 1px;
-	--sidebarList_border-left: 1px;
-	--sidebarList_border-top: 1px;
-	--panels_border-left: 1px;
-	--panels_border-top: 1px;
+	/*  borders, original discord look is all 0px, looks best on 1px for some themes  */
+	--call_border-bottom:                   0px;
+	/* --call_border-top: 1px; */
+	--title_border-top:                     0px;
+	--sidebarList_border-right:             0px;
+	--sidebarList_border-left:              0px;
+	--sidebarList_border-top:               0px;
+	--sidebarList_border-top-left-radius:   0px; /*  if transparency_topbar > 0% then 0px, if transparency_topbar is 0% then you can do 16px  */
+	--panels_border-left:                   0px;
+	--panels_border-top:                    0px;
 
 	/*  others  */
-	--border_colors:               rgba(75, 75, 75, 0.5);
-	--pill_padding:                  0px; /*  the white stuff to the left of guilds showing you: where you currently are, and what servers have unread messages  */
-	--server_padding:                -4px; /*  padding for guild icons, change if they're too far left or right  */
+	--border_colors:                      rgba(75, 75, 75, 0.5);
+	--pill_padding:                         0px; /*  the white stuff to the left of guilds showing you: where you currently are, and what servers have unread messages  */
+	--server_padding:                       -4px; /*  padding for guild icons, change if they're too far left or right  */
 }
+
+
 ```
