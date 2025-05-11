@@ -791,7 +791,6 @@ html.platform-osx .title_c38106 {
 		/* background-color: var(--background-secondary); */
 		/* background: none; */
 		border-bottom: var(--call_border-bottom) solid var(--border_colors);
-		border-top: var(--call_border-top) solid var(--border_colors);
 		box-shadow: var(--shadow-border), var(--shadow-ledge), var(--shadow-low);
 	}
 	/* call background */

@@ -54,7 +54,6 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 
 	/*  borders, original discord look is all 0px, looks best on 1px for some themes  */
 	--call_border-bottom:                   0px;
-	--call_border-top:                      0px;
 	--title_border-top:                     0px;
 	--sidebarList_border-right:             0px;
 	--sidebarList_border-left:              0px;
