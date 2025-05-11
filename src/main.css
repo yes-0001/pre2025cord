@@ -1,3 +1,12 @@
+@import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/addons/hide_camerabutton.css");
+
+/*  
+
+    MAKE SURE TO CHECK GITHUB FOR :ROOT UPDATES
+    if you use a theme, make sure to change the values to fit your needs, as these values work best with default theme
+
+*/
+
 :root {
 	--github-version: "v1.1";
 }
@@ -1028,8 +1037,8 @@ html.platform-osx .title_c38106 {
 		/* background: color-mix(color-mix(in hsl, var(--background-secondary), rgba(5, 5, 5, 1)), var(--transparency_bg)) !important; */
 		/* background-color: var(--background-secondary); */
 		/* background-color: color-mix(in hsl, var(--background-secondary), transparent var(--transparency_bg)); */
-		background: none;
- 		background-image: linear-gradient(
+		/* background: none; */
+ 		/* background-image: linear-gradient(
 			color-mix(
 				in hsl, color-mix(
 					in hsl, color-mix(
@@ -1048,6 +1057,15 @@ html.platform-osx .title_c38106 {
 					), rgba(0,0,0, var(--transparency_bg))
 				), rgba(0,0,0, var(--transparency_bg))
 			)
+		); */
+ 		background-color: color-mix(
+			in hsl, color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_bg))
+					), rgba(0,0,0, var(--transparency_bg))
+				), rgba(0,0,0, var(--transparency_bg))
+			), rgba(0,0,0, var(--transparency_bg))
 		);
 	}
 	.bar_c38106 {
