@@ -24,20 +24,21 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 */
 
 :root {
-	--current-version: "v1.1"; /*  the version of the settings (:root) is at, if it's different from github version then you need to update this part  */
+	--current-version: "v1.1";
 	
 	/*  opacity for version text on topbar, keep this slightly visible so you know when you need to check for :root changes  */
 	--version-opactiy: 4%;
 
 	/*  transparency values [0-100%], allows for use with a background image (0% means it's see-through, 100% means it's not at all see-through)  */
 	--transparency_call:                    80%;  /*  discord call background  */
-	--transparency_title:                   0%;  /*  title (the thing above chat in servers, and the thing above the call bg in dms)  */
+	--transparency_title-dms:               80%;  /*  title (the thing above the call bg in dms)  */
+	--transparency_title-server:            60%;  /*  title (the thing above chat in servers)  */
 	--transparency_chat:                    12%;
-	--transparency_channeltext:             0%;
+	--transparency_channeltext:             20%;
 	--transparency_bg:                      0%;
 	--transparency_topbar:                  60%;
 	--transparency_guildsList:              60%;  /*  server list  */
-	--transparency_sidebarList:             30%;  /*  channel/dm list  */
+	--transparency_sidebarList:             20%;  /*  channel/dm list  */
 	--transparency_searchbar-left:          40%;  /*  search bar on the top left above your dms  */
 	--transparency_searchbar-right:         40%;  /*  search bar on the top right  */
 	--transparency_panels:                  40%;  /*  bottom left voice/user info  */

@@ -918,8 +918,20 @@ html.platform-osx .title_c38106 {
 	.chat_f75fb0[data-has-border=true] {
 		border-top: var(--title_border-top) solid var(--border_colors);
 	}
+	.chat_f75fb0 {
+		border-radius: 0%;
+	}
 	.scrollableContainer__74017 {
-		background: none;
+		background: none !important;
+ 		background-color: color-mix(
+			in hsl, color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in srgb, var(--background-secondary), rgba(255,255,255, var(--transparency_channeltext))
+					), rgba(255,255,255, var(--transparency_channeltext))
+				), rgba(255,255,255, var(--transparency_channeltext))
+			), rgba(135,135,135, var(--transparency_channeltext))
+		) !important;
  		background-image: linear-gradient(
 			color-mix(
 				in hsl, color-mix(
@@ -983,19 +995,19 @@ html.platform-osx .title_c38106 {
 				in hsl, color-mix(
 					in hsl, color-mix(
 						in hsl, color-mix(
-							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title))
-						), rgba(0,0,0, var(--transparency_title))
-					), rgba(0,0,0, var(--transparency_title))
-				), rgba(0,0,0, var(--transparency_title))
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title-server))
+						), rgba(0,0,0, var(--transparency_title-server))
+					), rgba(0,0,0, var(--transparency_title-server))
+				), rgba(0,0,0, var(--transparency_title-server))
 			), 
 			color-mix(
 				in hsl, color-mix(
 					in hsl, color-mix(
 						in hsl, color-mix(
-							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title))
-						), rgba(0,0,0, var(--transparency_title))
-					), rgba(0,0,0, var(--transparency_title))
-				), rgba(0,0,0, var(--transparency_title))
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title-server))
+						), rgba(0,0,0, var(--transparency_title-server))
+					), rgba(0,0,0, var(--transparency_title-server))
+				), rgba(0,0,0, var(--transparency_title-server))
 			)
 		);
 		z-index: 3;
@@ -1029,6 +1041,7 @@ html.platform-osx .title_c38106 {
 		margin-left: 0;
 	}
 	.subtitleContainer_f75fb0 {
+		background: none;
 		border: none;
 		border-left: 0 !important;
 		border-radius: 0 !important;
@@ -1249,24 +1262,71 @@ html.platform-osx .title_c38106 {
 		); */
 		/* border-bottom: 1px solid var(--border_colors); */
 		background: none;
+		background-color: none;
  		background-image: linear-gradient(
 			color-mix(
 				in hsl, color-mix(
 					in hsl, color-mix(
 						in hsl, color-mix(
-							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title))
-						), rgba(0,0,0, var(--transparency_title))
-					), rgba(0,0,0, var(--transparency_title))
-				), rgba(0,0,0, var(--transparency_title))
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title-server))
+						), rgba(0,0,0, var(--transparency_title-server))
+					), rgba(0,0,0, var(--transparency_title-server))
+				), rgba(0,0,0, var(--transparency_title-server))
 			), 
 			color-mix(
 				in hsl, color-mix(
 					in hsl, color-mix(
 						in hsl, color-mix(
-							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title))
-						), rgba(0,0,0, var(--transparency_title))
-					), rgba(0,0,0, var(--transparency_title))
-				), rgba(0,0,0, var(--transparency_title))
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title-server))
+						), rgba(0,0,0, var(--transparency_title-server))
+					), rgba(0,0,0, var(--transparency_title-server))
+				), rgba(0,0,0, var(--transparency_title-server))
+			)
+		);
+		box-shadow: 0 2px 0 0 hsla(
+			none 0% 0%/0.05
+		), 0 1.5px 0 0 hsla(
+			none 0% 0%/0.05
+		), 0 1px 0 0 hsla(
+			none 0% 0%/0.16
+		);
+	}
+	.callContainer_cb9592 .container__9293f {
+		z-index: 3000;
+  		/* background-color: color-mix(in srgb, color-mix(in hsl, var(--background-secondary), rgba(5, 5, 5, 1)) var(1, --transparency_title), transparent); */
+		/* background-color: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(var(--color_title), var(--transparency_title))), rgba(0,0,0,var(--transparency_title))); */
+		/* background: color-mix(color-mix(in hsl, var(--background-secondary), rgba(5, 5, 5, 1)), var(--transparency_title)) !important; */
+		/* background-color: var(--background-secondary); */
+		/* background-color: color-mix(in hsl, var(--background-secondary), transparent var(--transparency_title)); */
+		/* background-color: color-mix(
+			in hsl, color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title))
+					), rgba(var(--color_title), var(--transparency_title))
+				), rgba(var(--color_title), var(--transparency_title))
+			), rgba(var(--color_title), var(--transparency_title))
+		); */
+		/* border-bottom: 1px solid var(--border_colors); */
+		background: none;
+ 		background-image: linear-gradient(
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title-dms))
+						), rgba(0,0,0, var(--transparency_title-dms))
+					), rgba(0,0,0, var(--transparency_title-dms))
+				), rgba(0,0,0, var(--transparency_title-dms))
+			), 
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title-dms))
+						), rgba(0,0,0, var(--transparency_title-dms))
+					), rgba(0,0,0, var(--transparency_title-dms))
+				), rgba(0,0,0, var(--transparency_title-dms))
 			)
 		);
 		box-shadow: 0 2px 0 0 hsla(
@@ -2010,6 +2070,8 @@ html.platform-osx .title_c38106 {
 		border-top: unset;
 		background: var(--bg-overlay-app-frame, var(--background-base-lowest));
 		box-sizing: unset;
+		border-radius: 0%;
+		width: 98% !important;
 	}
 	.floating__01ae2 {
 		border-left: 1px solid var(--background-secondary);
