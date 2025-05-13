@@ -66,8 +66,6 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 	--pill_padding:                         0px; /*  the white stuff to the left of guilds showing you: where you currently are, and what servers have unread messages  */
 	--server_padding:                       -4px; /*  padding for guild icons, change if they're too far left or right  */
 }
-
-
 ```
 
 ## [Join the Discord to give suggestions and complaints](https://discord.com/invite/klecakes)
