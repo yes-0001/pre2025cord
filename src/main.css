@@ -946,7 +946,28 @@ html.platform-osx .title_c38106 {
 	}
 	.scroller__629e4 {
 		top: 84px;
-		background-color: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(var(--color_sidebarList), var(--transparency_sidebarList))), rgba(0,0,0,var(--transparency_sidebarList)));
+		/* background-color: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(var(--color_sidebarList), var(--transparency_sidebarList))), rgba(0,0,0,var(--transparency_sidebarList))); */
+		background: none;
+ 		background-image: linear-gradient(
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_sidebarList))
+						), rgba(0,0,0, var(--transparency_sidebarList))
+					), rgba(0,0,0, var(--transparency_sidebarList))
+				), rgba(0,0,0, var(--transparency_sidebarList))
+			), 
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_sidebarList))
+						), rgba(0,0,0, var(--transparency_sidebarList))
+					), rgba(0,0,0, var(--transparency_sidebarList))
+				), rgba(0,0,0, var(--transparency_sidebarList))
+			)
+		);
 	}
 	.content__99f8c > div:first-child {
 		height: 0px !important;
