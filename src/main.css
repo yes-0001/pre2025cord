@@ -582,6 +582,8 @@ html.platform-osx .title_c38106 {
 	.toolbar__9293f {
 		gap: unset;
 		padding-left: unset;
+		padding-top: 5px;
+		padding-right: 35px;
 	}
 	.iconBadgeBottom__9293f {
 		right: 2px;
@@ -945,7 +947,7 @@ html.platform-osx .title_c38106 {
 		) !important;
 	}
 	.scroller__629e4 {
-		top: 84px;
+		/* top: 84px; */
 		/* background-color: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(var(--color_sidebarList), var(--transparency_sidebarList))), rgba(0,0,0,var(--transparency_sidebarList))); */
 		background: none;
  		background-image: linear-gradient(
@@ -969,8 +971,58 @@ html.platform-osx .title_c38106 {
 			)
 		);
 	}
-	.content__99f8c > div:first-child {
+	/* .content__99f8c > div:first-child {
 		height: 0px !important;
+	} */
+	.animatedContainer_f37cb1 {
+		z-index: 2;
+	}
+	.header_f37cb1 {
+		background: none;
+ 		background-image: linear-gradient(
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title))
+						), rgba(0,0,0, var(--transparency_title))
+					), rgba(0,0,0, var(--transparency_title))
+				), rgba(0,0,0, var(--transparency_title))
+			), 
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title))
+						), rgba(0,0,0, var(--transparency_title))
+					), rgba(0,0,0, var(--transparency_title))
+				), rgba(0,0,0, var(--transparency_title))
+			)
+		);
+		z-index: 3;
+	}
+	.chatHeaderBar_dc83f5 {
+		background: none;
+ 		background-image: linear-gradient(
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_sidebarList))
+						), rgba(0,0,0, var(--transparency_sidebarList))
+					), rgba(0,0,0, var(--transparency_sidebarList))
+				), rgba(0,0,0, var(--transparency_sidebarList))
+			), 
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_sidebarList))
+						), rgba(0,0,0, var(--transparency_sidebarList))
+					), rgba(0,0,0, var(--transparency_sidebarList))
+				), rgba(0,0,0, var(--transparency_sidebarList))
+			)
+		);
 	}
 	.container_c8ffbb {
 		border-top: 0;
