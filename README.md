@@ -24,10 +24,10 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 */
 
 :root {
-	--current-version: "v1.1";
+	--current-version: "v1.1"; /*  the version of the settings (:root) is at, if it's different from github version then you need to update this part  */
 	
 	/*  opacity for version text on topbar, keep this slightly visible so you know when you need to check for :root changes  */
-	--version-opactiy: 2%;
+	--version-opactiy: 4%;
 
 	/*  transparency values [0-100%], allows for use with a background image (0% means it's see-through, 100% means it's not at all see-through)  */
 	--transparency_call:                    80%;  /*  discord call background  */

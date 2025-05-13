@@ -34,7 +34,7 @@
 }
 
 #app-mount::before {
-  content: "current version:  "var(--current-version)"    |    github version:  "var(--github-version);
+  content: "current root ver:  "var(--current-version)"    |    github root ver:  "var(--github-version);
   text-align: center;
   position: absolute;
   color: rgba(255,255,255,var(--version-opactiy));
