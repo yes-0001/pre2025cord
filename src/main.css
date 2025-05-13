@@ -1341,7 +1341,7 @@ html.platform-osx .title_c38106 {
 		/* border-top: 1px solid var(--border_colors); */
 	}
 	.base_c48ade .sidebar_c48ade > .sidebarList_c48ade {
-		grid-area: sidebar;
+		/* grid-area: sidebar; */
 		width: 240px;
 		border-radius: 0;
 		border-top-left-radius: var(--sidebarList_border-top-left-radius);
