@@ -1,12 +1,3 @@
-@import url("https://raw.githubusercontent.com/yes-0001/pre2025cord/refs/heads/main/src/addons/hide_camerabutton.css");
-
-/*  
-
-    MAKE SURE TO CHECK GITHUB FOR :ROOT UPDATES
-    if you use a theme, make sure to change the values to fit your needs, as these values work best with default theme
-
-*/
-
 :root {
 	--github-version: "v1.1";
 }
@@ -853,6 +844,7 @@ html.platform-osx .title_c38106 {
 	.callContainer_cb9592 {
 		border-radius: 0 !important;
 		border: 0;
+		background: none !important;
 		/* background-color: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(var(--color_call), var(--transparency_call))), rgba(0,0,0,var(--transparency_call))) !important; */
 		/* background-color: color-mix(color-mix(in hsl, var(--background-secondary), rgba(0, 0, 0, 1)), transparent) !important; */
 		/* background-color: var(--background-secondary); */
@@ -862,6 +854,9 @@ html.platform-osx .title_c38106 {
 	}
 	/* call background */
 	.root_c8dbe9 {
+		height: 90%;
+		margin-top: 48px;
+		align-items: center;
 		background: none;
  		background-image: linear-gradient(
 			color-mix(
@@ -977,8 +972,12 @@ html.platform-osx .title_c38106 {
 	.animatedContainer_f37cb1 {
 		z-index: 2;
 	}
+	.container__2637a {
+		background: none;
+	}
 	.header_f37cb1 {
 		background: none;
+		background-color: none;
  		background-image: linear-gradient(
 			color-mix(
 				in hsl, color-mix(
@@ -1148,7 +1147,7 @@ html.platform-osx .title_c38106 {
 		z-index: 104;
 		transition: none;
 		/* background-color: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(var(--color_bg), var(--transparency_bg))), rgba(0,0,0,var(--transparency_bg))); */
-		/* background: none; */
+		background: none;
  		background-image: linear-gradient(
 			color-mix(
 				in hsl, color-mix(
@@ -1350,6 +1349,16 @@ html.platform-osx .title_c38106 {
 		/* background-color: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(var(--color_sidebarList), var(--transparency_sidebarList))), rgba(0,0,0,var(--transparency_sidebarList))); */
 		/* background-color: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(30, 30, 30, 1)), var(--transparency)); */
 		/* background-color: var(--background-secondary); */
+		background: none;
+		/* border-right: 1px solid var(--border_colors); */
+		--custom-app-panels-height: 0;
+	}
+	.base_c48ade .sidebar_c48ade > .sidebarList_c48ade > .scroller__629e4 {
+		/* grid-area: sidebar; */
+  		/* background-color: color-mix(in srgb, color-mix(in hsl, var(--background-secondary), rgba(30, 30, 30, 1)) var(1, --transparency_sidebarList), transparent); */
+		/* background-color: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(var(--color_sidebarList), var(--transparency_sidebarList))), rgba(0,0,0,var(--transparency_sidebarList))); */
+		/* background-color: color-mix(in hsl, color-mix(in hsl, var(--background-secondary), rgba(30, 30, 30, 1)), var(--transparency)); */
+		/* background-color: var(--background-secondary); */
 		/* background: none; */
 		/* border-right: 1px solid var(--border_colors); */
 		background: none;
@@ -1373,9 +1382,6 @@ html.platform-osx .title_c38106 {
 				), rgba(0,0,0, var(--transparency_sidebarList))
 			)
 		);
-		border-left: var(--sidebarList_border-left) solid var(--border_colors);
-		border-top: var(--sidebarList_border-top) solid var(--border_colors);
-		--custom-app-panels-height: 0;
 	}
 	.scroller__99e7c {
 		background: none;
