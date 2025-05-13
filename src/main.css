@@ -525,28 +525,6 @@ html.platform-osx .title_c38106 {
 	.searchBar__35e86 {
 		border-bottom: unset;
 		box-shadow: var(--elevation-low);
-		background: none;
-		background-color: none;
- 		background-image: linear-gradient(
-			color-mix(
-				in hsl, color-mix(
-					in hsl, color-mix(
-						in hsl, color-mix(
-							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title))
-						), rgba(0,0,0, var(--transparency_title))
-					), rgba(0,0,0, var(--transparency_title))
-				), rgba(0,0,0, var(--transparency_title))
-			), 
-			color-mix(
-				in hsl, color-mix(
-					in hsl, color-mix(
-						in hsl, color-mix(
-							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_title))
-						), rgba(0,0,0, var(--transparency_title))
-					), rgba(0,0,0, var(--transparency_title))
-				), rgba(0,0,0, var(--transparency_title))
-			)
-		);
 	}
 	.searchBar__35e86 .grow__201d5.fullWidth__201d5.sizeSmall__201d5.colorPrimary__201d5.lookFilled__201d5.button__201d5 {
 		width: 100%;
