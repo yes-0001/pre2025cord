@@ -30,6 +30,7 @@ Paste the following in `Settings > Themes > Edit QuickCSS`:
 	--version-opactiy: 4%;
 
 	/*  transparency values [0-100%], allows for use with a background image (0% means it's see-through, 100% means it's not at all see-through)  */
+	/*  transparency also means how dark it is when you don't have a background image  */
 	--transparency_call:                    80%;  /*  discord call background  */
 	--transparency_title-dms:               80%;  /*  title (the thing above the call bg in dms)  */
 	--transparency_title-server:            60%;  /*  title (the thing above chat in servers)  */
