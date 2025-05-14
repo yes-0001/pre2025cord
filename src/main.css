@@ -1445,6 +1445,26 @@ html.platform-osx .title_c38106 {
 	}
 	.scroller__99e7c {
 		background: none;
+ 		background-image: linear-gradient(
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_sidebarList))
+						), rgba(0,0,0, var(--transparency_sidebarList))
+					), rgba(0,0,0, var(--transparency_sidebarList))
+				), rgba(0,0,0, var(--transparency_sidebarList))
+			), 
+			color-mix(
+				in hsl, color-mix(
+					in hsl, color-mix(
+						in hsl, color-mix(
+							in srgb, var(--background-secondary), rgba(0,0,0, var(--transparency_sidebarList))
+						), rgba(0,0,0, var(--transparency_sidebarList))
+					), rgba(0,0,0, var(--transparency_sidebarList))
+				), rgba(0,0,0, var(--transparency_sidebarList))
+			)
+		);
 	}
 	.privateChannels__35e86 {
 		background: none
